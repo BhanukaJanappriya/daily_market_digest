@@ -1,0 +1,6 @@
+timestamp,input_type,summary_length,summary_preview
+2025-08-09T18:41:49.472084,manual,92,Error generating analysis: The model `gpt-4` does not exist or you do not have access to it.
+2025-08-09T18:45:35.774888,manual,218,"Error generating analysis: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error..."
+2025-08-09T18:50:31.713098,manual,218,"Error generating analysis: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error..."
+2025-08-09T18:57:07.244497,manual,218,"Error generating analysis: You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error..."
+2025-08-09T19:59:24.722812,manual,837,"**MARKET ANALYSIS** (Basic Analysis Mode) --- **Top 5 Market Trends:** 1. Overall Market Sentiment: Negative 2. Key Topics: stock, market, trading 3. News Focus: Market concerns 4. Market Activity: Mo..."
