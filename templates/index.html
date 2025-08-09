@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Market Digest</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><i class="fas fa-chart-line"></i> Daily Market Digest</h1>
+        <p>AI-powered financial news analysis and investment insights</p>
+      </header>
+
+      <main>
+        <div class="input-section">
+          <h2>Market News Input</h2>
+
+          <div class="input-options">
+            <button id="fetchNewsBtn" class="btn btn-primary">
+              <i class="fas fa-download"></i> Fetch Latest News
+            </button>
+            <span class="or-divider">OR</span>
+            <label for="manualInput" class="manual-label"
+              >Paste your market report manually:</label
+            >
+          </div>
+
+          <textarea
+            id="manualInput"
+            placeholder="Paste your financial news or market report here..."
+          ></textarea>
+
+          <button id="generateBtn" class="btn btn-secondary" disabled>
+            <i class="fas fa-brain"></i> Generate AI Summary
+          </button>
+
+          <div id="lastFetched" class="timestamp"></div>
+        </div>
+
+        <div class="content-grid">
+          <div class="main-content">
+            <div class="output-section">
+              <h2>Market Analysis</h2>
+              <div id="loadingSpinner" class="spinner hidden">
+                <i class="fas fa-spinner fa-spin"></i> Analyzing market data...
+              </div>
+              <div id="summary" class="summary-output"></div>
+
+              <div id="exportSection" class="export-section hidden">
+                <button id="exportPdfBtn" class="btn btn-accent">
+                  <i class="fas fa-file-pdf"></i> Export as PDF
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="sidebar">
+            <div class="headlines-section">
+              <h3>Latest Headlines</h3>
+              <div id="headlines" class="headlines-container"></div>
+            </div>
+
+            <div class="market-indices">
+              <h3>Market Indices</h3>
+              <div id="indices" class="indices-container"></div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
